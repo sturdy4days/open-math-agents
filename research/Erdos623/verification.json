@@ -1,0 +1,61 @@
+{
+  "projectToolchain": "Lean 4.33.1",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "freshFromSources": true,
+  "audits": [
+    "Erdos623.e623_iff_fs1",
+    "Erdos623.frOmegaExact_implies_fsOmega",
+    "Erdos623.frOmega_implies_frOmegaExact",
+    "Erdos623.fs1_iff_fsOmega",
+    "Erdos623.fsOmega_iff_frOmega",
+    "Erdos623.fsOmega_implies_frOmega",
+    "Erdos623.zfcBridge",
+    "Erdos623Lower.bad_map_below_aleph_omega",
+    "Erdos623Lower.card_aleph_levels",
+    "Erdos623Lower.countable_levels",
+    "Erdos623Lower.exact_countable_bound",
+    "Erdos623Lower.finite_aleph_obstruction",
+    "Erdos623Lower.finite_free",
+    "Erdos623Lower.finite_free_iff",
+    "Erdos623Lower.obstruction_below",
+    "Erdos623Lower.obstruction_iff_cardinal",
+    "Erdos623Lower.singleton_of_obstruction",
+    "Erdos623Lower.successor",
+    "OMA.Erdos623Bridge.exact_iff_koepke",
+    "OMA.Erdos623Bridge.free_above",
+    "OMA.Erdos623Bridge.infiniteWitness_iff",
+    "OMA.Erdos623Bridge.singleton_iff_structural",
+    "OMA.Erdos623Bridge.structural_of_embedding",
+    "OMA.Erdos623Lower.avoids",
+    "OMA.Erdos623Lower.finite_free_iff",
+    "OMA.Erdos623Lower.free_sets_all_sizes",
+    "OMA.Erdos623Lower.hits_every_member",
+    "OMA.Erdos623Lower.no_infinite_free"
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "elapsedLeanSeconds": 76.07,
+  "sourceModules": 13,
+  "moduleSeconds": {
+    "623.lean": 5.9,
+    "Basic.lean": 6.41,
+    "E623FS1.lean": 11.01,
+    "SingletonToCountable.lean": 7.09,
+    "StructuralBridge.lean": 6.32,
+    "ZFCBridge.lean": 6.81,
+    "ProjectBridge.lean": 5.53,
+    "CountableExample.lean": 2.76,
+    "ErdosHajnalLower.lean": 8.11,
+    "SharpArity.lean": 4.55,
+    "CountableBound.lean": 3.29,
+    "AtAlephOmega.lean": 3.02,
+    "PublicAudit.lean": 5.27
+  },
+  "originalStatementDiagnostics": [
+    "FormalConjectures/ErdosProblems/623.lean:39:8: warning: declaration uses `sorry`"
+  ],
+  "contributedSourceWarnings": 0
+}

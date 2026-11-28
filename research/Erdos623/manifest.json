@@ -1,0 +1,91 @@
+{
+  "formalConjectures": "9097e2f90e66d2f6244209cb1c07f7120d17ec53",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "donor": "fabea68c8296ce1f538e88bf5c8d4a302dc39c32",
+  "article": {
+    "path": "FormalConjectures/ErdosProblems/623.lean",
+    "inputSha256": "bd19bb84701fa2c3d974c5465f8d95702082e3d07dc16e9147e2bf4131d9fe7b",
+    "compiledSha256": "bd19bb84701fa2c3d974c5465f8d95702082e3d07dc16e9147e2bf4131d9fe7b"
+  },
+  "donorModules": [
+    {
+      "path": "Erdos623/Basic.lean",
+      "inputSha256": "841ce6fdb733e1ecbcd8a1fafb3a684903f4c7bc2f0419ed05e896c066e64184",
+      "compiledSha256": "841ce6fdb733e1ecbcd8a1fafb3a684903f4c7bc2f0419ed05e896c066e64184"
+    },
+    {
+      "path": "Erdos623/E623FS1.lean",
+      "inputSha256": "28058529d3232b3370d49b7d832c23871f1acc733ba2eb92325fa0bda48ef335",
+      "compiledSha256": "28058529d3232b3370d49b7d832c23871f1acc733ba2eb92325fa0bda48ef335"
+    },
+    {
+      "path": "Erdos623/SingletonToCountable.lean",
+      "inputSha256": "0f45edd0422a0907e34158bdd8a082cfc081ce7fec01beb8e15174957b01a4ac",
+      "compiledSha256": "23382885afe47d96146acc8ac3907ae2ccf8da51d53ea25d3fe1f57d0950af86"
+    },
+    {
+      "path": "Erdos623/StructuralBridge.lean",
+      "inputSha256": "dc657b2e600189db30081acef27965ad294ac7a710c036b05ae784a70664b30c",
+      "compiledSha256": "1d60d39bab01b1bf5e9f3265e0386394ca9ab0c9769dc154c920fce1a85f5348"
+    },
+    {
+      "path": "Erdos623/ZFCBridge.lean",
+      "inputSha256": "484a9090a1079c683e2efd145e33088e80ca07940550057148187acb285999e5",
+      "compiledSha256": "484a9090a1079c683e2efd145e33088e80ca07940550057148187acb285999e5"
+    }
+  ],
+  "localSources": {
+    "ProjectBridge.lean": "80d10e4890ecff6432c8264e9562d6d779dfabfc75ca944f78af23776deda1bd",
+    "CountableExample.lean": "7ca297c86f11b6c4c0b24a6629681bd833ce6d4c6198b71d4122a7d14bbb713e",
+    "ErdosHajnalLower.lean": "b6005682df64889c6c1b67315c5f0dddbb202ad2db999eb1362e629805e4af50",
+    "PublicAudit.lean": "9a0aeded073566125892c146a5727956142fcdd4982efa74d6f18b0247430399",
+    "SharpArity.lean": "0799b98460059cc83559124055c95f49f38a9fed3cbd0ca496151ef1fec4258a",
+    "CountableBound.lean": "dc93c1b0938abb17260388ad8c5eea5e759752305f06eba90dee3ae31765fca5",
+    "AtAlephOmega.lean": "0ad03e602afaaabc7b9ceb42262a23495a246e6f6317c9817f7f4b4e0da60bf8"
+  },
+  "buildOrder": [
+    "FormalConjectures/ErdosProblems/623.lean",
+    "Erdos623/Basic.lean",
+    "Erdos623/E623FS1.lean",
+    "Erdos623/SingletonToCountable.lean",
+    "Erdos623/StructuralBridge.lean",
+    "Erdos623/ZFCBridge.lean",
+    "ProjectBridge.lean",
+    "CountableExample.lean",
+    "ErdosHajnalLower.lean",
+    "SharpArity.lean",
+    "CountableBound.lean",
+    "AtAlephOmega.lean",
+    "PublicAudit.lean"
+  ],
+  "audits": [
+    "Erdos623.e623_iff_fs1",
+    "Erdos623.fs1_iff_fsOmega",
+    "Erdos623.fsOmega_implies_frOmega",
+    "Erdos623.frOmega_implies_frOmegaExact",
+    "Erdos623.frOmegaExact_implies_fsOmega",
+    "Erdos623.fsOmega_iff_frOmega",
+    "Erdos623.zfcBridge",
+    "OMA.Erdos623Bridge.infiniteWitness_iff",
+    "OMA.Erdos623Bridge.structural_of_embedding",
+    "OMA.Erdos623Bridge.singleton_iff_structural",
+    "OMA.Erdos623Bridge.exact_iff_koepke",
+    "OMA.Erdos623Bridge.free_above",
+    "OMA.Erdos623Lower.avoids",
+    "OMA.Erdos623Lower.hits_every_member",
+    "OMA.Erdos623Lower.no_infinite_free",
+    "OMA.Erdos623Lower.finite_free_iff",
+    "OMA.Erdos623Lower.free_sets_all_sizes",
+    "Erdos623Lower.successor",
+    "Erdos623Lower.finite_aleph_obstruction",
+    "Erdos623Lower.obstruction_below",
+    "Erdos623Lower.singleton_of_obstruction",
+    "Erdos623Lower.bad_map_below_aleph_omega",
+    "Erdos623Lower.finite_free",
+    "Erdos623Lower.obstruction_iff_cardinal",
+    "Erdos623Lower.finite_free_iff",
+    "Erdos623Lower.countable_levels",
+    "Erdos623Lower.card_aleph_levels",
+    "Erdos623Lower.exact_countable_bound"
+  ]
+}
