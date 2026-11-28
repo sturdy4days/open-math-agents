@@ -1,0 +1,94 @@
+{
+  "target": "OMA.R_RiemannHypothesis_robin_criterion_R1.H2",
+  "claim": "The divisor-sum inequalities for all n > 5040 imply RH.",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "formalConjecturesCommit": "9097e2f90e66d2f6244209cb1c07f7120d17ec53",
+  "parentReductionGitBlob": "0670d0cf9cb8871c9ddd17820c8cf53e115d8990",
+  "sourceBytes": 491516,
+  "sourceSHA256": "c27a8e1ec639c87e85fa57041ba28f5acca9f833515fd522a3fdb2fdb1773a01",
+  "compilerOutput": {
+    "errors": 0,
+    "warnings": 0,
+    "informationalRingSuggestions": 5
+  },
+  "wholeFileReplay": {
+    "module": "Submission",
+    "exit": 0,
+    "seconds": 113.58,
+    "peakRSSKiB": 7972492,
+    "sha256": "c27a8e1ec639c87e85fa57041ba28f5acca9f833515fd522a3fdb2fdb1773a01"
+  },
+  "gate": {
+    "commit": "81d95db53a8c499284145e2c7f57a8c9ea5c309e",
+    "inputs": {
+      "tools/lint.py": "c5681bccabba946ab50ee790d3b11ed6feba837d",
+      "data/catalog.json": "dfdf3b5d704e110e83e6559721093cfcd7b338d3",
+      "data/extra.json": "1011d66b25585b3d5270d0da525af90392d43ebf",
+      "data/extra2.json": "a33e4e9b343c96ce37932644722ab4da95956c77",
+      "data/extra3.json.gz": "7668ef6da2e272c866a4a99fba4a81da7de9c635",
+      "data/placeholders.json": "c7e3a90b0b2fa2534c58799709dbd2416c98ab3a",
+      "reductions/RiemannHypothesis.robin_criterion.R1.lean": "0670d0cf9cb8871c9ddd17820c8cf53e115d8990"
+    },
+    "checkedSHA256": "c27a8e1ec639c87e85fa57041ba28f5acca9f833515fd522a3fdb2fdb1773a01",
+    "gate": {
+      "file": "proofs/RiemannHypothesis.robin_criterion.R1.H2.lean",
+      "type": "step",
+      "problem": "RiemannHypothesis.robin_criterion.R1.H2",
+      "ok": true,
+      "kind": "known",
+      "polarity": "proof",
+      "theorem": "OMA.solution",
+      "imports": "OMAReductions.R_RiemannHypothesis_robin_criterion_R1",
+      "errors": [],
+      "target": "OMA.R_RiemannHypothesis_robin_criterion_R1.H2",
+      "needsReduction": "RiemannHypothesis.robin_criterion.R1"
+    }
+  },
+  "audit": {
+    "module": "Audit",
+    "exit": 0,
+    "seconds": 6.19,
+    "peakRSSKiB": 7060296,
+    "sha256": "884e37f003c232ee95ab8dbbf4b77d76fc9bc0ea6b0c9a0be3411b84d575c9ec"
+  },
+  "axioms": {
+    "RobinConverse.finite_product_compensatedPsi": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RobinConverse.primitive_boundary": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RobinConverse.compensated_mellin_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RobinConverse.compensated_singularity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RobinConverse.compensated_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OMA.solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "publishedPrior": {
+    "author": "Jonas Whidden",
+    "immutableCommit": "208b44750090b7b0e2254e3d511b4d119052cd03",
+    "date": "2026-08-31",
+    "sourceBlob": "f7a232868c2a6be4fb37b90294a60d7aacc53f88",
+    "exactTypeAudit": "'RobinConversePrior.desk_target' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "projectNote": 132911
+  }
+}
