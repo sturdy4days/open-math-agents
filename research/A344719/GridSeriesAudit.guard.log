@@ -1,0 +1,4 @@
+'OMA.A344719Series.series_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OMA.A344719Series.formula_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OMA.A344719Series.series_iff_initial_and_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OMA.A344719Series.original_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
