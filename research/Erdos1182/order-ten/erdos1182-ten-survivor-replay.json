@@ -1,0 +1,269 @@
+{
+  "lean": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "regenerated": true,
+  "axioms": {
+    "Terminal18.avoidance": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Terminal18.three_obstructions": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "compilations": [
+    {
+      "module": "Extension",
+      "seconds": 1.48,
+      "objectSha256": "ff6f1a91b4b2f5760365e56fa6b9e4a6069090a8fdbb3d8467ff1bd0a28b91fd"
+    },
+    {
+      "module": "Atlas",
+      "seconds": 2.23,
+      "objectSha256": "e9ae60d05d3645a3a4e03926e6c498efff405cbc931d4fd33d4345f7789f0ff3"
+    },
+    {
+      "module": "Orbit",
+      "seconds": 1.85,
+      "objectSha256": "a2da9ab579f1ecc44c27a6058e423aa17bae4923ead16c15bc0f3e4747bb6ca0"
+    },
+    {
+      "module": "Records",
+      "seconds": 2.6,
+      "objectSha256": "25819b90522b96f5d4438b2520a649b1245dc4bac1423ecb41342fe4ae3b5a4b"
+    },
+    {
+      "module": "TwinParent",
+      "seconds": 3.53,
+      "objectSha256": "bffd40bdef11868198ff6e33b516db549f44131905b459fe3abe5ca85a382ea4"
+    },
+    {
+      "module": "LastData",
+      "seconds": 5.73,
+      "objectSha256": "c7e37751806fa7b793cdc825f517714738f53cc248e11aed83e0d939b5c0ff3f"
+    },
+    {
+      "module": "Hall",
+      "seconds": 2.51,
+      "objectSha256": "752f922228e12343703961be6b0a5be6ac15fcb188bdb2ca14e62d47c6720270"
+    },
+    {
+      "module": "HallStart",
+      "seconds": 2.92,
+      "objectSha256": "ffc95ae2ef389c422706aef2da7e58c29d275861653dd40e930f14cb65085e4d"
+    },
+    {
+      "module": "HallRowData",
+      "seconds": 2.94,
+      "objectSha256": "f9e52777984510f6395b2def242ece4d4e0156dede6d52a438e6b54c4c2eacb2"
+    },
+    {
+      "module": "HallBranch0x0",
+      "seconds": 2.96,
+      "objectSha256": "8a19e8156b6a3dfa93cdaa50a7984abd6ce254cd2e3c78905cbb348f6064d1dc"
+    },
+    {
+      "module": "HallBranch0x1",
+      "seconds": 3.17,
+      "objectSha256": "4fa18b5f16c8bd5911539b776bd712e4b5a5c0d925aea10fdf1ee27452f95f03"
+    },
+    {
+      "module": "HallBranch0x2",
+      "seconds": 2.77,
+      "objectSha256": "012abe60a1609b37351af7a21199723b262804eb1e5e10bcda58f0acfce84263"
+    },
+    {
+      "module": "HallBranch0x3",
+      "seconds": 5.49,
+      "objectSha256": "2751d5847fb0fdf08592e6540d0312eb799434d7566d30aa6cda0e853e505cd1"
+    },
+    {
+      "module": "HallBranch0x4",
+      "seconds": 5.3,
+      "objectSha256": "ee5aad213303e3aeb675842424fe15abbeaf4ec887ea95a099c2a150b00e181d"
+    },
+    {
+      "module": "HallBranch0x5",
+      "seconds": 4.07,
+      "objectSha256": "3569116e554049f31df64d822065d85cbb1924ce0ce1e9788381fcfba26a4c9a"
+    },
+    {
+      "module": "HallBranch0x6",
+      "seconds": 5.4,
+      "objectSha256": "5f631539b751a7d13455d0c56106f8b56c4b857b1b56b8748a4dcab3659d9c58"
+    },
+    {
+      "module": "HallBranch0x7",
+      "seconds": 5.6,
+      "objectSha256": "3787df702dd90bb6e68fdf40caf53d23499296c17b0ecf46949737ff0413997a"
+    },
+    {
+      "module": "HallBranch0x8",
+      "seconds": 6.04,
+      "objectSha256": "d7395ef50eb1f6fd720921dc86f530cf66f50d03e9b9f206a5279ac13ce22656"
+    },
+    {
+      "module": "HallBranch0x9",
+      "seconds": 6.17,
+      "objectSha256": "218f385910f7e6a46a8cf8a7dc9ce28887be002678f55b1232071a6d96854400"
+    },
+    {
+      "module": "HallBranch0x10",
+      "seconds": 6.05,
+      "objectSha256": "ef33c04d643507178fd47c0bd6660b60dc33318ae584ad40f771ff59e9b0ada8"
+    },
+    {
+      "module": "HallBranch0x11",
+      "seconds": 5.93,
+      "objectSha256": "03596639c7a01d477eda30172fd22b4782210904b313af8ea5b9005df959d2ef"
+    },
+    {
+      "module": "HallBranch0x12",
+      "seconds": 5.74,
+      "objectSha256": "a1797ac2b1f3a0ef8cd562ae8862afb85591454e36f2f1a72ef7bc671ec298ae"
+    },
+    {
+      "module": "HallBranch0x13",
+      "seconds": 4.96,
+      "objectSha256": "3d5f73f4b9a6ee04ef75b27ea6417ba47d1157bebfdff390de168952a8d98ebf"
+    },
+    {
+      "module": "HallBranch0x14",
+      "seconds": 4.4,
+      "objectSha256": "5134e70d692a8ae10b671c59402f4a4f9c8e4897d268a105ce1ad0e501c8b5a3"
+    },
+    {
+      "module": "HallBranch0x15",
+      "seconds": 7.24,
+      "objectSha256": "9fb4b51b07073fa6eb0614b967604c2413178a5059dc80777aa2ca9ebb94ff1e"
+    },
+    {
+      "module": "HallBranch0x16",
+      "seconds": 3.03,
+      "objectSha256": "84ad7e104fa24879f5ffb9a976564e0adadc65c5f3ecb7cffbcf98dd75348504"
+    },
+    {
+      "module": "HallBranch0x17",
+      "seconds": 4.93,
+      "objectSha256": "b925018b981c778a0e87984aea05d59270e83cb8df5471bc445747add5702497"
+    },
+    {
+      "module": "HallBranch1x0",
+      "seconds": 2.12,
+      "objectSha256": "372b990a0e40d6b0c2d48c3176c04def27b5ed9f17a1913c4d3f25407a1988e3"
+    },
+    {
+      "module": "HallBranch1x1",
+      "seconds": 4.25,
+      "objectSha256": "03e4304432f809d51a591a6599b0f1400ca5bb9f363cafad14a70498548cad65"
+    },
+    {
+      "module": "HallBranch1x2",
+      "seconds": 3.57,
+      "objectSha256": "f1a0cbd326076646fc9bd6cfbde41929b52faf1277c0bb2c757ca07e8fa35da9"
+    },
+    {
+      "module": "HallBranch1x3",
+      "seconds": 5.17,
+      "objectSha256": "9542c392e11a8c74d1568c31cb922d1c9330ae95fd944fd4a768b64a915fc4f6"
+    },
+    {
+      "module": "HallBranch1x4",
+      "seconds": 3.29,
+      "objectSha256": "ab3dca9606fc8b0e995a1484d861acd8b81ddcbf4e2e80d074fab67a6410a0c8"
+    },
+    {
+      "module": "HallBranch1x5",
+      "seconds": 2.9,
+      "objectSha256": "0f1f92b4ee66c78f8788edd419d791ca499024f6c43e73507a1db2a4e18532fe"
+    },
+    {
+      "module": "HallBranch1x6",
+      "seconds": 3.33,
+      "objectSha256": "3744ab908e4a33fc93341ad3604c6699a2c0fa0d8bf163a62a9975c3496529f8"
+    },
+    {
+      "module": "HallBranch1x7",
+      "seconds": 4.37,
+      "objectSha256": "4251c51022b561f95d4ce5f52db9e7c4e60639e96a93324a6b929268f38f9a76"
+    },
+    {
+      "module": "HallBranch1x8",
+      "seconds": 3.2,
+      "objectSha256": "6e88a9100d33d9913bb107d453390a41f3b4f31d6a7a2ca1ea86ae01511eae5c"
+    },
+    {
+      "module": "HallBranch1x9",
+      "seconds": 3.7,
+      "objectSha256": "2a4e8c9d8e258ec693a36a128b57a2bf4ba110301f0ac2f0cabcc4be2a797bef"
+    },
+    {
+      "module": "HallBranch1x10",
+      "seconds": 8.7,
+      "objectSha256": "98f9298c8527734224d5f76a4c1459c8ccee2b2b5c462fed53e5e3e35c3f367f"
+    },
+    {
+      "module": "HallBranch1x11",
+      "seconds": 10.03,
+      "objectSha256": "7553f77b9fe804fd82823a3095e30db4d585bbc8dd4199d3f99837b79b8d99c0"
+    },
+    {
+      "module": "HallBranch1x12",
+      "seconds": 10.43,
+      "objectSha256": "bf38d49dd6888f5bea153bddcb149485decdab1239cf526b8869acdf2c1a8fa0"
+    },
+    {
+      "module": "HallBranch1x13",
+      "seconds": 10.54,
+      "objectSha256": "7761bcac0b0867f1ac493fc07d887ddaf6967d6eb25fb1edd9930fc76d3aee14"
+    },
+    {
+      "module": "HallBranch1x14",
+      "seconds": 14.81,
+      "objectSha256": "c96bdc882482db4c75e4318b1ca55eefc0eb531042c350105427f5734c77ef19"
+    },
+    {
+      "module": "HallBranch1x15",
+      "seconds": 9.68,
+      "objectSha256": "d4e55002f224411f1586877c9aa9189442a64b814f252bb0150e9dd54806db92"
+    },
+    {
+      "module": "HallBranch1x16",
+      "seconds": 12.25,
+      "objectSha256": "c752bcff6776ef294e06d49e17719d8bac6aa7c395e99b154c8174a76d74bf72"
+    },
+    {
+      "module": "HallBranch1x17",
+      "seconds": 6.18,
+      "objectSha256": "6062186008a8da46e7afcf253208407a04f7198e7fd03b5b8e1dee6ebc5a47c7"
+    },
+    {
+      "module": "MaximalParents",
+      "seconds": 7.2,
+      "objectSha256": "fc6d4a877616d98ab97661462be1ef114686306457e2eb1f8a05f493550c7771"
+    },
+    {
+      "module": "SurvivorInvariants",
+      "seconds": 2.38,
+      "objectSha256": "f042221285df741e603924281ef9337531be80d802961ad5583e92b9623d48a7"
+    },
+    {
+      "module": "NoCopy0",
+      "seconds": 4.48,
+      "objectSha256": "1af0483098f740f87f6283ca2d4dc05cea56a278800a6a29715c560b5edcdc73"
+    },
+    {
+      "module": "NoCopy1",
+      "seconds": 6.0,
+      "objectSha256": "ac9f26ae4fb1416da084fbb2ed6d3952db70ea21ec60e05ea02d2a0f31af156c"
+    },
+    {
+      "module": "Survivors",
+      "seconds": 1.95,
+      "objectSha256": "bbd0ec9865ffdeb490e562bcb2dcad75b23076512f7fcc5cdc78adf6ba1d4725"
+    }
+  ]
+}
