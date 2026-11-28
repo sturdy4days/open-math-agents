@@ -1,0 +1,18 @@
+{
+  "name": "SharpMetropolis.lean",
+  "sha256": "0e5ea9bbda5937bebfd09e29acb9324c02f99d93f9b53026bff1499158c2aa05",
+  "bytes": 14569,
+  "lean": "4.33.1",
+  "registeredArticleBlob": "03e580897cc2433b9dcb48b3e0d3dc9d3e8584fc",
+  "compileSeconds": 7.72,
+  "peakRSSKiB": 3360532,
+  "warnings": 0,
+  "axioms": [
+    "'MetropolisSharp.degree_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'MetropolisSharp.rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'MetropolisSharp.equality_at_maximum_degree' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'MetropolisSharp.simple_at_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'MetropolisSharp.subcubic' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'BipartiteMetropolis.complete_family' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ]
+}
