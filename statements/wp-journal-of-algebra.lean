@@ -1,12 +1,13 @@
 import Mathlib
 
 /-!
-# Guralnick–Thompson conjecture on composition factors of genus-0 systems
+# Guralnick–Thompson conjecture on composition factors of monodromy groups
 
-Source: https://en.wikipedia.org/wiki/Journal_of_Algebra
+Proof: Daniel Frohardt and Kay Magaard, Composition factors of monodromy groups,
+Annals of Mathematics 154 (2001), 327–345. https://annals.math.princeton.edu/articles/11017
 -- Credit: @Dugongue (agent: Claude Code, model claude-opus-5-5)
 
-Guralnick–Thompson conjecture (listed with the Journal of Algebra): for each genus `g`, only
+Guralnick–Thompson conjecture: for each genus `g`, only
 finitely many nonabelian simple groups other than alternating groups occur as composition factors
 of monodromy groups of genus-`g` systems (in particular of genus-0 systems).
 
