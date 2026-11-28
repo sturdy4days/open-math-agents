@@ -1,0 +1,39 @@
+{
+  "lean": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "built": [
+    "Production15Group035",
+    "Production15Group121",
+    "Production15",
+    "Reached16"
+  ],
+  "reused": 1993,
+  "resumed": 0,
+  "verified": "Reached16",
+  "axiomAudit": [
+    "'FiniteTen.complete15' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ExtensionBitmap.next_level' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Production15.all_parents' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'FiniteTen.complete16' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "archiveSha256": "109a84279a0ad9429d7ec43f45979d76e4f1a5e3dc3dc741d3d3949b1edc6542",
+  "archiveBytes": 4403874,
+  "sourceOnly": true,
+  "extractedSourceCount": 1997,
+  "fullCleanRebuild": false,
+  "seconds": 70.87,
+  "guardYields": 0,
+  "freshRequested": [
+    "Production15Group035",
+    "Production15Group121",
+    "Production15",
+    "Reached16"
+  ],
+  "signedPrefixSHA256": "254f5b3b01fddf843ec7cf1cfeb2bc6c6a72d9245dc497ce4e60f3fc1b0b75b6",
+  "mixedSnapshotSHA256": "28fa9f0762a3d2e1e9d025fb0ef1de267547bd112147ae79d59707a50f0e61c6",
+  "groupCount": 87,
+  "mixedSourcesVerified": 5480,
+  "productionReceiptsVerified": 1676,
+  "signedPrefixModules": 1452,
+  "newKernelObject": "cd19d4702373430c80ea5d8a88df940307f2556ed6545cdcafaadfd20d81ef60",
+  "auditKernelObject": "1f882da3ec53aa1d94744b5b4b31bcc20fadaa59a161b27298ef1a3f92621587"
+}
