@@ -1,0 +1,3 @@
+'MOBicliquePacking.incidence_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MOTwoPadding.four_mul_add_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MOBicliquePacking.four_cycle_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
