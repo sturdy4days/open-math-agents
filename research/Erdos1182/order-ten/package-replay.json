@@ -1,0 +1,147 @@
+{
+  "archive": "erdos1182-ten-terminal-supplement.tar.gz",
+  "sha256": "58e612117baf96d7d3002db4daa65a09c438b5c49e5ceba5dc32a40053f3c9be",
+  "sourceBytes": 34808,
+  "modules": [
+    {
+      "name": "Extension",
+      "seconds": 1.52,
+      "objectSHA256": "5440b2b2f23223406c52948922cae9d2fe74c9857571f79f6d0e27e3d2f87200"
+    },
+    {
+      "name": "Atlas",
+      "seconds": 1.54,
+      "objectSHA256": "58738f2245a666b049852416f5c99b8296c437153caf14c1f515df7e95ddcc06"
+    },
+    {
+      "name": "Orbit",
+      "seconds": 1.52,
+      "objectSHA256": "105054a5a8683c30af328ce6f28e61a4c8b8df1b792fe3c47e7fbba4bc9fdb2e"
+    },
+    {
+      "name": "Records",
+      "seconds": 2.19,
+      "objectSHA256": "184baf6d46bdd74d5e8f0fbaf3488a8c2810f1046a6adcda88e027712c1da05d"
+    },
+    {
+      "name": "TwinParent",
+      "seconds": 1.47,
+      "objectSHA256": "51a36c8fc2fe3db4def6df8957099e2cbf01742b6cf2f4598b74f7184b507729"
+    },
+    {
+      "name": "Minimum",
+      "seconds": 1.97,
+      "objectSHA256": "751ed169f162d66b7943a4669e15096149f8963ea6612af20934fdf66382619e"
+    },
+    {
+      "name": "Priority",
+      "seconds": 1.89,
+      "objectSHA256": "e5a6acbe02d15bf4a600d4c56b2f469b34a50faa43b2792796a02d06b9ace544"
+    },
+    {
+      "name": "PurePriority",
+      "seconds": 1.88,
+      "objectSHA256": "5674b3a822cf355edeb841e07652df747ac085cc3f7c7a598ee94018436d51d8"
+    },
+    {
+      "name": "PureWitness",
+      "seconds": 1.47,
+      "objectSHA256": "51fa4651fe5fd214246ddc0cc528579d20d59970549fd1d2474b160e210ed1cd"
+    },
+    {
+      "name": "BitPriority",
+      "seconds": 2.15,
+      "objectSHA256": "948de6f14397b4b2af01923ba0576369503b8402056ebeceeabb5d2673e9d14b"
+    },
+    {
+      "name": "BitPriorityRows",
+      "seconds": 2.22,
+      "objectSHA256": "bf3b122ee3a0629cecaec890709e8dd7217cc1cb43b99322ef71b92eee0b6523"
+    },
+    {
+      "name": "FastIso",
+      "seconds": 1.87,
+      "objectSHA256": "f4f523c432677d67cc9d61347e16f5e274cdb2f6ae951e961af2ee2c3fbdb8c8"
+    },
+    {
+      "name": "Cubes",
+      "seconds": 1.58,
+      "objectSHA256": "45d81fa4e99c8c036b91d9f0e6dfa397e917811ae21545275579b85c05ca92b3"
+    },
+    {
+      "name": "FastCube",
+      "seconds": 1.81,
+      "objectSHA256": "6721238fd5c0cbbeb9b8b97da8ff54c8ea3309f9e14156e5db26edde30467218"
+    },
+    {
+      "name": "LastData",
+      "seconds": 4.93,
+      "objectSHA256": "d09d783f4411443c8437e53cdf1b83312e0505fe6d6d4a3fd573814e895c6e13"
+    },
+    {
+      "name": "CubeCoverage",
+      "seconds": 2.42,
+      "objectSHA256": "3ebf16dd9630a4bac3772b2e450431d106458a2aae56cc3eeda57a946b623f87"
+    },
+    {
+      "name": "FirstCoverage",
+      "seconds": 2.39,
+      "objectSHA256": "45d269090348f1c0a678f5056629d5184bf6406685637de556d3937ae4e65af8"
+    },
+    {
+      "name": "FirstMaps",
+      "seconds": 12.08,
+      "objectSHA256": "4635e5185e120ad499ad92098db59888f6172400dd490022bef5a5e811e596e8"
+    },
+    {
+      "name": "FirstTransitions",
+      "seconds": 2.3,
+      "objectSHA256": "46d24635fe908c8acc0e582cc71948f54c27316508cf9ddeabf92cc7ca56f866"
+    },
+    {
+      "name": "BipartiteTerminal",
+      "seconds": 48.06,
+      "objectSHA256": "3a109578f6b653de243ed4eb54760b49e5b8153721b0686ce6c348afabaed102"
+    },
+    {
+      "name": "TerminalReduction",
+      "seconds": 1.98,
+      "objectSHA256": "57e86ae773603da158e805fe42751cf6f598e24cd83c313afb49049c304ac029"
+    },
+    {
+      "name": "TenthFrom18",
+      "seconds": 5.04,
+      "objectSHA256": "89d1311bbd8d3cbb2429894ae6acf4ab8fb3cd5be36a49513d153bfa1b513095"
+    },
+    {
+      "name": "TerminalArithmetic",
+      "seconds": 6.31,
+      "objectSHA256": "8033687a6a955bfbc17f6463b8a5227dd909fb9330866f34e58cb76d2b219815"
+    },
+    {
+      "name": "PriorityTerminalAudit",
+      "seconds": 6.11,
+      "objectSHA256": "5bfc2897c34646168e68f67c9ea34d6af44001ab234cb9153816830d73b8cbe6"
+    }
+  ],
+  "axioms": [
+    "'BBHExtension.parent' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'BBHExtension.maximal_delete_twin' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'BBHExtension.minimum_complement_covers' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'BBHExtension.twinMinimum_complement_covers' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'BBHExtension.priority_complement_covers' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'BBHExtension.pureDeletion_iff_common_neighbors' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'BBHExtension.checkPriority_iff' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'BBHExtension.certified_priority_codes' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'BBHExtension.fastIso_sound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'BBHExtension.cube_covers' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'BBHExtension.fastCube_sound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Terminal18.first' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Terminal18.second' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Terminal18.bipartite_terminal' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Terminal18.extensions' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Terminal18.order19' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Terminal18.exact_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Terminal18.ten_values' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ]
+}
