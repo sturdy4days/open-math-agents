@@ -1,0 +1,193 @@
+{
+  "file": "FullClassification.lean",
+  "bytes": 73367,
+  "sha256": "b192559bd4c2cb5e9e248f2efce80bdf5924acc822eb585eea24387f1d04ce68",
+  "pinned_lean": "4.33.1",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "verified_article": {
+    "statement": {
+      "path": "statements/oeis-a034171.lean",
+      "size": 1105,
+      "sha": "e45d817179f7df51afc12381827f19090a41d8ee"
+    },
+    "sha256": "760b71282e8e7636fab285968917a0d4147cec37d6cb7eadeaa5422e63693a23",
+    "gitTree": "1a33d960c471586d4efb501a8e76ade0cd0e537e"
+  },
+  "compilation": {
+    "elapsed_seconds": 37.336,
+    "peak_rss_kib": 6861124
+  },
+  "diagnostics": [],
+  "audits": {
+    "TripleFactorial.factorial_divides": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.cubic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.digit_law": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.product_law": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.first_order": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.original_nonzero_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.original_lift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.unbounded_failures": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.unit_translate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.all_prime_lift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.all_prime_criterion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.failure_iff_digits": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.bounded_digit_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.bounded_unit_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.failure_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.failure_count_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.excluded_iff_lt_sq_of_failure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.unexcluded_failure_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.unexcluded_failure_count_small": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.power_plus_one_failure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.least_unexcluded_failure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BalaHarmonic.harmonic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BalaMultiplier.weighted_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BalaMultiplier.ratio": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BalaMultiplier.closed_multiplier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.explicit_multiplier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.explicit_lift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BalaWieferich.root_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BalaWieferich.base_test": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BalaWieferich.exact_failure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BalaWieferich.failure_iff_wieferich_digits": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.at_1006003": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.universal_iff_wieferich": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TripleFactorial.first_failure_at_square_plus_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}
