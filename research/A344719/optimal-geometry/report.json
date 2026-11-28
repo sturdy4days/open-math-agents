@@ -1,0 +1,12 @@
+{
+  "base": "7e62bfb0cd0193b061be185fd790ad3a9396d1396ece5e2c231d0d584274bd5a",
+  "supplement": "f073b8795388f22093de793cce210251c01fc353282a95b3704716835d383a37",
+  "bytes": 22060,
+  "supplementAxioms": [
+    "'FairGrid.Rigidity.optimal_painted_incidences' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'FairGrid.Rigidity.optimal_defect_count' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'FairGrid.Rigidity.unique_diagonal_of_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "elapsed_seconds": 15.818,
+  "peak_rss_kib": 6939424
+}
