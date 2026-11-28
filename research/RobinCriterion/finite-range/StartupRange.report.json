@@ -1,0 +1,24 @@
+{
+  "checks": [
+    {
+      "module": "StartupInline",
+      "exit": 0,
+      "seconds": 120.694,
+      "peakRSSKiB": 7528156,
+      "utc": "2026-11-28T11:36:12.705990+00:00",
+      "sourceSHA256": "d2939fd480d9ed3126044b936dc811c872ab82a25368ed17453012b7db528899"
+    },
+    {
+      "module": "StartupInlineAudit",
+      "exit": 0,
+      "seconds": 3.726,
+      "peakRSSKiB": 3610264,
+      "utc": "2026-11-28T11:36:16.432507+00:00",
+      "sourceSHA256": "f242b36bddb5aec60d781600214231aa1f4631f2f356d4c9142e231a801849ec"
+    }
+  ],
+  "axioms": "'RobinInline.startup' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "mathlibCommit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "compilationPaths": "Mathlib, its standard packages, Lean, and the standalone source only"
+}
