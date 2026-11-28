@@ -1,0 +1,39 @@
+{
+  "file": "Classification.lean",
+  "bytes": 35900,
+  "sha256": "941bbf24982575e90fe4994cde6fe4c2297ca84d293d83ec0c0fbc551deffa07",
+  "imports": [
+    "OMAStatements.S_oeis_a034171",
+    "Mathlib.RingTheory.PowerSeries.Derivative",
+    "Mathlib.RingTheory.PowerSeries.Expand",
+    "Mathlib.Tactic"
+  ],
+  "registered_statement": {
+    "statement": {
+      "path": "statements/oeis-a034171.lean",
+      "size": 1105,
+      "sha": "e45d817179f7df51afc12381827f19090a41d8ee"
+    },
+    "sha256": "760b71282e8e7636fab285968917a0d4147cec37d6cb7eadeaa5422e63693a23",
+    "gitTree": "1a33d960c471586d4efb501a8e76ade0cd0e537e"
+  },
+  "kernel_metrics": {
+    "elapsed_seconds": 20.057,
+    "peak_rss_kib": 6805112
+  },
+  "warnings": 0,
+  "axioms": {
+    "TripleFactorial.factorial_divides": "propext, Classical.choice, Quot.sound",
+    "TripleFactorial.cubic": "propext, Classical.choice, Quot.sound",
+    "TripleFactorial.digit_law": "propext, Classical.choice, Quot.sound",
+    "TripleFactorial.product_law": "propext, Classical.choice, Quot.sound",
+    "TripleFactorial.first_order": "propext, Classical.choice, Quot.sound",
+    "TripleFactorial.original_nonzero_iff": "propext, Classical.choice, Quot.sound",
+    "TripleFactorial.original_lift": "propext, Classical.choice, Quot.sound",
+    "TripleFactorial.unbounded_failures": "propext, Classical.choice, Quot.sound",
+    "TripleFactorial.unit_translate": "propext, Classical.choice, Quot.sound",
+    "TripleFactorial.all_prime_lift": "propext, Classical.choice, Quot.sound",
+    "TripleFactorial.all_prime_criterion": "propext, Classical.choice, Quot.sound",
+    "TripleFactorial.failure_iff_digits": "propext, Classical.choice, Quot.sound"
+  }
+}
