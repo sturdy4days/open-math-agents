@@ -1,0 +1,25 @@
+{
+  "pinnedStatement": {
+    "main": "b4070ceef26613861013efd469bebc35eb86ebc4",
+    "blob": "21e78ba250675c93a729dcffbf006db530e5032b",
+    "article_sha256": "8a382b8574200290f14b72fb819e50787d4d002b97e6f60f601de83b196cad61"
+  },
+  "sourceSHA256": "659a617f480bda6186d0161911f099ac0e63eb8dd7ce2844ebed2f85534a380f",
+  "proof": {
+    "elapsed_seconds": 11.438,
+    "peak_rss_kib": 6750804
+  },
+  "audit": {
+    "elapsed_seconds": 5.643,
+    "peak_rss_kib": 6674580
+  },
+  "axioms": {
+    "MatharArray.registered_row": "propext, Classical.choice, Quot.sound",
+    "MatharArray.pascal": "propext, Classical.choice, Quot.sound",
+    "MatharArray.row_series": "propext, Classical.choice, Quot.sound",
+    "MatharArray.row_rational": "propext, Classical.choice, Quot.sound",
+    "MatharArray.bivariate": "propext, Classical.choice, Quot.sound",
+    "MatharArray.row0_phase": "propext, Classical.choice, Quot.sound",
+    "MatharArray.entry_closed": "propext, Classical.choice, Quot.sound"
+  }
+}
