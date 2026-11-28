@@ -1,0 +1,30 @@
+{
+  "ModuloNine": {
+    "elapsed_seconds": 38.705,
+    "peak_rss_kib": 7546440
+  },
+  "TernaryPeriods": {
+    "elapsed_seconds": 10.932,
+    "peak_rss_kib": 6604952
+  },
+  "Audit": {
+    "elapsed_seconds": 8.888,
+    "peak_rss_kib": 6574852
+  },
+  "independently_rebuilt_from_pinned_downloads": true,
+  "audited_theorems": [
+    "Multinacci351889.period_iff",
+    "Multinacci351889.prime_cases",
+    "Multinacci351889.exact_periods",
+    "Multinacci351889.wu_third_ternary",
+    "Multinacci351889.ternary_all_widths",
+    "Multinacci351889.order_prime_to_three",
+    "Multinacci351889.nine_direct",
+    "Multinacci.squarefree_denom_three"
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}
