@@ -6,6 +6,10 @@ The Lean theorem supplies the polynomials in the variable $m=\lfloor(n+1)/2\rflo
 
 The proof checks the bijection between numbers and their signed labels, the four-entry window test, and the evaluation of each length’s polynomial on the actual finite word count. At length seven it also proves equality with the original public definition. [Lean proof](AllWindowLengths.lean) · [Nine-declaration axiom audit](Audit.txt)
 
+## A rational generating function for every length
+
+Let $A_k(n)$ be the count at alphabet endpoint $n$, and let $G_k(X)=\sum_{n\ge0} A_k(n)X^n$. The formal power series $G_k(X)(1-X^2)^{k+1}$ is a polynomial of degree less than $2(k+1)$. The numerator is determined by the first $2(k+1)$ counts. Multiplication by $1-X^2$ takes a difference two positions apart. After $k+1$ differences the even and odd coefficient sequences both vanish because their polynomials have degree at most $k$. This formula includes the alphabet endpoint zero. [Lean proof](WindowRational.lean) · [Axiom audit](RationalAudit.txt)
+
 ## An independent seven-entry calculation
 
 There are 15 pairs of positions whose separation is at most three. Inclusion-exclusion over all $2^{15}=32768$ edge sets gives an independent calculation of the two degree-five polynomials. An edge $ij$ imposes $x_j=n-x_i$. Each bipartite connected component, including each isolated position, allows $n+1$ choices for its first entry. On a component with an odd cycle, the equation forces the middle letter, available only for even $n$. Combining the graph counts with the inclusion-exclusion weights gives
