@@ -1,0 +1,26 @@
+{
+  "lean": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "built": [
+    "Production14P0000",
+    "Production14P0727",
+    "Production14",
+    "Reached15"
+  ],
+  "reused": 1448,
+  "resumed": 0,
+  "verified": "Reached15",
+  "axiomAudit": [
+    "'FiniteTen.complete14' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Production14.all_parents' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ExtensionBitmap.next_level' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'FiniteTen.complete15' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "seconds": 18.1,
+  "archiveSha256": "254f5b3b01fddf843ec7cf1cfeb2bc6c6a72d9245dc497ce4e60f3fc1b0b75b6",
+  "archiveBytes": 2125014,
+  "extractedSourceCount": 1452,
+  "newKernelObject": "65d4ab2ff9a7f4a3a67ee717dca2557182539e21b27345aa35dde2f755c9baa2",
+  "auditKernelObject": "85427e797aeb3ebaf26edab1f099534cb11690a5d3993695ddba48503f3f6e08",
+  "sourceOnly": true,
+  "fullCleanRebuild": false
+}
