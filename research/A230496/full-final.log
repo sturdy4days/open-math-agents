@@ -1,0 +1,11 @@
+OMAStatements/S_oeis_a230496.lean: OK
+Lead.lean: OK
+OMAStatements/S_oeis_a230496.lean:28:8: warning: declaration uses `sorry`
+S_oeis_a230496.lean 7.48
+Lead.lean 19.52
+IPReturns.lean 7.97
+'OMA.FiniteSums.exists_sequence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OMA.FiniteSums.subsum_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OMA.OdiousIP.polynomial_ip_returns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OMA.OdiousIP.odious_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+Audit.lean 9.43
