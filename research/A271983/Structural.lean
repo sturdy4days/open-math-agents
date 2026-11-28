@@ -294,3 +294,88 @@ theorem doubling_outside_36_60_200 {n m : ℕ}
     · obtain ⟨i,hi⟩ := hm; omega
 
 end OMA.S_oeis_a271983
+
+namespace OMA.S_oeis_a271983
+
+private theorem phi_threes (a : ℕ) : (36*3^a).totient = 12*3^a := by
+  induction a with
+  | zero => decide
+  | succ a ih =>
+    have shift : 36*3^(a+1) = 3*(36*3^a) := by rw [pow_succ]; ac_rfl
+    rw [shift,Nat.totient_mul_of_prime_of_dvd Nat.prime_three
+      (dvd_mul_of_dvd_left (by decide : 3 ∣ 36) _),ih,pow_succ]
+    ac_rfl
+
+/-- A multiple of 36 whose totient is not divisible by 8 has the form 36 · 3ᵃ.
+In particular its totient determines it uniquely. -/
+private theorem unique_low_two {x : ℕ} (mul36 : 36 ∣ x) (no8 : ¬ 8 ∣ x.totient) :
+    x = 3*x.totient := by
+  obtain ⟨y,rfl⟩ := mul36
+  have yn : y ≠ 0 := by rintro rfl; simp at no8
+  obtain ⟨a,u,no3,split⟩ := Nat.exists_eq_pow_mul_and_not_dvd yn 3 (by decide)
+  have uy : u ∣ y := split ▸ dvd_mul_left _ _
+  have no2 : ¬ 2 ∣ u := by
+    intro two
+    have div : 72 ∣ 36*y := Nat.mul_dvd_mul_left 36 (two.trans uy)
+    exact no8 ((show 8 ∣ Nat.totient 72 by decide).trans (Nat.totient_dvd_of_dvd div))
+  have u1 : u=1 := by
+    by_contra other
+    have u_pos : 0 < u := Nat.pos_of_dvd_of_pos uy (Nat.pos_of_ne_zero yn)
+    have big : 2<u := by omega
+    have c2 := Nat.prime_two.coprime_iff_not_dvd.mpr no2
+    have c3 := Nat.prime_three.coprime_iff_not_dvd.mpr no3
+    have cop : Nat.Coprime 36 u := (c2.pow_left 2).mul_left (c3.pow_left 2)
+    have div : (36*u).totient ∣ (36*y).totient := Nat.totient_dvd_of_dvd
+      (Nat.mul_dvd_mul_left 36 uy)
+    apply no8
+    apply dvd_trans _ div
+    rw [Nat.totient_mul cop]
+    obtain ⟨k,h⟩ := Nat.totient_even big
+    change 8 ∣ 12*u.totient
+    exact ⟨3*k,by omega⟩
+  rw [u1,mul_one] at split
+  rw [split,phi_threes]
+  omega
+
+/-- All-even two-element fibers have at least three factors of 2 in the common totient. -/
+theorem eight_dvd {n m : ℕ} (distinct : n ≠ m) (same : n.totient = m.totient)
+    (hn : Even n) (hm : Even m) (covers : ∀ k : ℕ, k.totient = n.totient → k=n ∨ k=m) :
+    8 ∣ n.totient := by
+  by_contra no8
+  have determine {x : ℕ} (hit : x.totient = n.totient) : x = 3*n.totient := by
+    have fail : ¬8 ∣ x.totient := hit ▸ no8
+    rcases multiple_of_36_or_100 distinct same hn hm covers hit with h | h
+    · rw [← hit]
+      exact unique_low_two h fail
+    · exact False.elim (fail ((show 8 ∣ Nat.totient 100 by decide).trans (Nat.totient_dvd_of_dvd h)))
+  exact distinct ((determine rfl).trans (determine same.symm).symm)
+
+theorem necessary_72_120_200 {n m : ℕ} (distinct : n ≠ m) (same : n.totient = m.totient)
+    (hn : Even n) (hm : Even m) (covers : ∀ k : ℕ, k.totient = n.totient → k=n ∨ k=m) :
+    72 ∣ n.totient ∨ 120 ∣ n.totient ∨ 200 ∣ n.totient := by
+  have := eight_dvd distinct same hn hm covers
+  have := common_multiple_36_60_200 distinct same hn hm covers
+  omega
+
+/-- Outside the multiples of 72, 120 and 200, every two-element totient fiber consists of
+an odd integer and its double. -/
+theorem doubling_outside_72_120_200 {n m : ℕ}
+    (distinct : n ≠ m) (same : n.totient = m.totient)
+    (covers : ∀ k : ℕ, k.totient = n.totient → k=n ∨ k=m)
+    (no72 : ¬ 72 ∣ n.totient) (no120 : ¬ 120 ∣ n.totient) (no200 : ¬ 200 ∣ n.totient) :
+    (Odd n ∧ m=2*n) ∨ (Odd m ∧ n=2*m) := by
+  have odd_side : Odd n ∨ Odd m := by
+    rcases Nat.even_or_odd n with en | on
+    · rcases Nat.even_or_odd m with em | om
+      · exact False.elim ((necessary_72_120_200 distinct same en em covers).elim no72 (fun h => h.elim no120 no200))
+      · exact Or.inr om
+    · exact Or.inl on
+  rcases odd_side with hn | hm
+  · rcases covers (2*n) (Nat.totient_two_mul_of_odd hn) with h | h
+    · obtain ⟨i,hi⟩ := hn; omega
+    · exact Or.inl ⟨hn,h.symm⟩
+  · rcases covers (2*m) ((Nat.totient_two_mul_of_odd hm).trans same.symm) with h | h
+    · exact Or.inr ⟨hm,h.symm⟩
+    · obtain ⟨i,hi⟩ := hm; omega
+
+end OMA.S_oeis_a271983
