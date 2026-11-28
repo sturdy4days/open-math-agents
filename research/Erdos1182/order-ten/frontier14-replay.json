@@ -1,0 +1,26 @@
+{
+  "lean": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "built": [
+    "Production13P0000",
+    "Production13P0309",
+    "Production13",
+    "Reached14"
+  ],
+  "reused": 656,
+  "resumed": 0,
+  "verified": "Reached14",
+  "axiomAudit": [
+    "'EarlyRamsey.complete13_code' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Production13.all_parents' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ExtensionBitmap.next_level' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'FiniteTen.complete14' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "seconds": 13.56,
+  "archiveSha256": "997e0c3a00e4318000385526df356b5c244c698dd83ff808d54e1c9e333f4a20",
+  "archiveBytes": 799401,
+  "extractedSourceCount": 660,
+  "newKernelObject": "616aaf69f7c0f56870672d2bffa904eddded9edf1c1b646bfb68b0f85ac8619e",
+  "auditKernelObject": "f9bf66d7f2aea35c68927fdf9e4222659ab3acac914bbbe64b7ca0ed8ab44812",
+  "sourceOnly": true,
+  "fullCleanRebuild": false
+}
