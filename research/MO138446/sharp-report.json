@@ -1,0 +1,19 @@
+{
+  "lean": "4.33.1",
+  "modules": {
+    "SharpModulusStandalone.lean": [
+      "'MordellResidue.nonsquare_odd_power' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'MordellResidue.prime_power_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'MordellResidue.nonsquare_cube_zero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'MordellResidue.cube_zero_squares_iff_squarefree' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'MordellResidue.square_cube_iff_squarefree' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'MordellResidue.zero_modulus_square' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'MordellResidue.square_cube_moduli' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    ],
+    "RationalObstruction.lean": [
+      "'MordellObstruction.increasing' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'MordellObstruction.rational_family' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    ]
+  },
+  "diagnostics": []
+}
