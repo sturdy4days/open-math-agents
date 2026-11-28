@@ -1,0 +1,13 @@
+# A two-preimage totient outside three arithmetic progressions
+
+Suppose exactly two natural numbers have totient $N$. If $N$ is divisible by none of **8,800, 78,624, or 517,104**, then the two numbers are an odd integer and its double. In particular, the conjecture in OEIS A271983 holds for every $N<8{,}800$. These three progressions occupy **473,864 of the 3,697,293,600 ordinary integer residue classes** in a common period, approximately 0.01282%. The conjecture on the remaining progressions stays open. [OEIS A271983](https://oeis.org/A271983) · [Earlier structural result](https://github.com/sturdy4days/open-math-agents/blob/0019263753447597069ca4fb1787cf344c225852/research/A271983/Structural.lean)
+
+If a fiber contains an odd number $u$, it also contains $2u$, since $\varphi(2u)=\varphi(u)$. It therefore suffices to constrain fibers with two even members. The proof shows that **each** member of such a fiber is divisible by at least one of $24{,}200$, $36{,}300$, $298{,}116$, or $1{,}910{,}412$. Their totients are $8{,}800$, $8{,}800$, $78{,}624$, and $517{,}104$. Since $d\mid x$ implies $\varphi(d)\mid\varphi(x)$, this gives the three progressions.
+
+## How the finite certificate works
+
+The basic substitution is that $\varphi(a)=\varphi(b)$ implies $\varphi(ac)=\varphi(bc)$ whenever each prime dividing $c$ divides both or neither of $a,b$. For example, $\varphi(36)=\varphi(21)=12$. If $c$ is coprime to $14$, then $36c$ has the same totient as the odd integer $21c$. Thus, if $36$ divides a member of an all-even fiber, then $72$ or $252$ divides it. A second kind of substitution uses $\varphi(72)=\varphi(90)=\varphi(84)=24$. If $c>0$ is coprime to $35$, their multiples by $c$ give three distinct preimages and rule out a two-member fiber.
+
+The certificate uses 57 substitutions of these two kinds. Start from the previously established fact that each exceptional preimage $x$ is a multiple of $36$ or $100$. Among the 352 listed divisors that divide $x$, choose the largest. Its assigned substitution forces a strictly larger divisor of $x$. The table checks that the larger divisor is either also listed, contradicting maximality, or a multiple of one of the four terminal divisors. This argument applies to arbitrarily large $x$.
+
+The script used to discover the substitutions considered prime supports in $\{2,3,5,7,11,13,17,19\}$. The standalone Lean file contains the substitutions, the divisibility table, and the verification of their arithmetic and logical consequences. The final residue count uses inclusion–exclusion over a common period. [Standalone Lean proof](LocalObstruction.lean)
