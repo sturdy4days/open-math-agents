@@ -1,0 +1,73 @@
+{
+  "archive": "erdos1182-ten-host-certificate.tar.gz",
+  "size": 406609,
+  "sha256": "30987610e39774676bad1d88286221a056f2386a3493bdf71aaafac92ce0c351",
+  "processLimitMiB": 768,
+  "cleanReplay": [
+    {
+      "cmd": [
+        "sha256sum",
+        "-c",
+        "SHA256SUMS"
+      ],
+      "seconds": 0.007,
+      "last": [
+        "validate.cpp: OK"
+      ]
+    },
+    {
+      "cmd": [
+        "c++",
+        "-O3",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "certcheck.cpp",
+        "-o",
+        "certcheck"
+      ],
+      "seconds": 1.31,
+      "last": []
+    },
+    {
+      "cmd": [
+        "c++",
+        "-O3",
+        "-std=c++17",
+        "validate.cpp",
+        "-o",
+        "validate"
+      ],
+      "seconds": 1.498,
+      "last": []
+    },
+    {
+      "cmd": [
+        "./certcheck",
+        "--compare-atlas"
+      ],
+      "seconds": 2.449,
+      "last": [
+        "Verified every priority extension: 133340 admissible of 240151183 assignments."
+      ]
+    },
+    {
+      "cmd": [
+        "./validate"
+      ],
+      "seconds": 0.027,
+      "last": [
+        "Verified 3 simple, maximal triangle-free, template-avoiding hosts."
+      ]
+    },
+    {
+      "cmd": [
+        "./certcheck"
+      ],
+      "seconds": 2.599,
+      "last": [
+        "Verified every priority extension: 133340 admissible of 240151183 assignments."
+      ]
+    }
+  ]
+}
