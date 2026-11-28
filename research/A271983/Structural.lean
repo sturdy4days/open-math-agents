@@ -204,3 +204,93 @@ theorem doubling_outside_12_and_40 {n m : ℕ}
     · obtain ⟨i,hi⟩ := hm; omega
 
 end OMA.S_oeis_a271983
+
+namespace OMA.S_oeis_a271983
+
+/-- If 5 is absent from the totient, swapping a single 3² for 7 excludes valuation
+one at 3. Both factors have totient 6. -/
+private theorem replace_nine {n m : ℕ} (distinct : n ≠ m) (same : n.totient = m.totient)
+    (hn : Even n) (hm : Even m) (covers : ∀ k : ℕ, k.totient = n.totient → k=n ∨ k=m)
+    (no5 : ¬ 5 ∣ n.totient) : 9 ∣ n.totient := by
+  have force {x : ℕ} (hit : x.totient = n.totient) : 9 ∣ x := by
+    rcases square_obstruction distinct same hn hm covers hit with h | h
+    · exact h
+    · exact False.elim (no5 (hit ▸ (show 5 ∣ Nat.totient 25 by decide).trans (Nat.totient_dvd_of_dvd h)))
+  by_contra no9
+  obtain ⟨y,hy⟩ := force (x:=n) rfl
+  have exclude (p : ℕ) (hp : 9 ∣ (9*p).totient) : ¬p ∣ y := by
+    intro h
+    have dvd : 9*p ∣ n := hy ▸ Nat.mul_dvd_mul_left 9 h
+    exact no9 (hp.trans (Nat.totient_dvd_of_dvd dvd))
+  have c3 : Nat.Coprime 3 y := Nat.prime_three.coprime_iff_not_dvd.mpr (exclude 3 (by decide))
+  have c7 : Nat.Coprime 7 y := (by decide : Nat.Prime 7).coprime_iff_not_dvd.mpr
+    (exclude 7 (by decide))
+  have hit : (7*y).totient = n.totient := by
+    rw [hy,Nat.totient_mul c7,Nat.totient_mul (show Nat.Coprime 9 y from c3.pow_left 2)]
+    rfl
+  have h3 : 3 ∣ 7*y := (show 3 ∣ 9 by decide).trans (force hit)
+  exact (Nat.prime_three.coprime_iff_not_dvd.mp c3) ((Nat.prime_three.dvd_mul.mp h3).resolve_left (by decide))
+
+/-- When 3 is absent from the totient, swap a factor 5² for 2·11. The even
+cofactor makes the extra factor 2 contribute a factor 2 to the totient. -/
+private theorem replace_twentyfive {n m : ℕ} (distinct : n ≠ m) (same : n.totient = m.totient)
+    (hn : Even n) (hm : Even m) (covers : ∀ k : ℕ, k.totient = n.totient → k=n ∨ k=m)
+    (no3 : ¬ 3 ∣ n.totient) : 25 ∣ n.totient := by
+  have force {x : ℕ} (hit : x.totient = n.totient) : 25 ∣ x := by
+    rcases square_obstruction distinct same hn hm covers hit with h | h
+    · exact False.elim (no3 (hit ▸ (show 3 ∣ Nat.totient 9 by decide).trans (Nat.totient_dvd_of_dvd h)))
+    · exact h
+  by_contra no25
+  obtain ⟨y,hy⟩ := force (x:=n) rfl
+  have exclude (p : ℕ) (hp : 25 ∣ (25*p).totient) : ¬p ∣ y := by
+    intro h
+    have dvd : 25*p ∣ n := hy ▸ Nat.mul_dvd_mul_left 25 h
+    exact no25 (hp.trans (Nat.totient_dvd_of_dvd dvd))
+  have c5 : Nat.Coprime 5 y := (by decide : Nat.Prime 5).coprime_iff_not_dvd.mpr
+    (exclude 5 (by decide))
+  have c11 : Nat.Coprime 11 y := (by decide : Nat.Prime 11).coprime_iff_not_dvd.mpr
+    (exclude 11 (by rw [Nat.totient_mul (by decide : Nat.Coprime 25 11)]; decide))
+  have ey : Even y := by
+    obtain ⟨k,hk⟩ := hn
+    exact ⟨y/2,by omega⟩
+  have hite : Even (11*y) := ey.mul_left _
+  have hit : (2*(11*y)).totient = n.totient := by
+    rw [Nat.totient_two_mul_of_even hite,hy,Nat.totient_mul c11,
+      Nat.totient_mul (show Nat.Coprime 25 y from c5.pow_left 2)]
+    change 2*(10*y.totient)=20*y.totient
+    omega
+  have h5 : 5 ∣ 22*y := (show 5 ∣ 25 by decide).trans (by simpa [← Nat.mul_assoc] using force hit)
+  exact ((by decide : Nat.Prime 5).coprime_iff_not_dvd.mp c5)
+    (((by decide : Nat.Prime 5).dvd_mul.mp h5).resolve_left (by decide))
+
+/-- A counterexample at a totient N requires that N be divisible by 36, 60 or 200. -/
+theorem common_multiple_36_60_200 {n m : ℕ} (distinct : n ≠ m) (same : n.totient = m.totient)
+    (hn : Even n) (hm : Even m) (covers : ∀ k : ℕ, k.totient = n.totient → k=n ∨ k=m) :
+    36 ∣ n.totient ∨ 60 ∣ n.totient ∨ 200 ∣ n.totient := by
+  have first := common_multiple_12_or_40 distinct same hn hm covers
+  have second := replace_nine distinct same hn hm covers
+  have third := replace_twentyfive distinct same hn hm covers
+  omega
+
+/-- Outside the multiples of 36, 60, and 200, every two-element totient fiber consists of
+an odd integer and its double. -/
+theorem doubling_outside_36_60_200 {n m : ℕ}
+    (distinct : n ≠ m) (same : n.totient = m.totient)
+    (covers : ∀ k : ℕ, k.totient = n.totient → k=n ∨ k=m)
+    (no36 : ¬ 36 ∣ n.totient) (no60 : ¬ 60 ∣ n.totient) (no200 : ¬ 200 ∣ n.totient) :
+    (Odd n ∧ m=2*n) ∨ (Odd m ∧ n=2*m) := by
+  have odd_side : Odd n ∨ Odd m := by
+    rcases Nat.even_or_odd n with en | on
+    · rcases Nat.even_or_odd m with em | om
+      · exact False.elim ((common_multiple_36_60_200 distinct same en em covers).elim no36 (fun h => h.elim no60 no200))
+      · exact Or.inr om
+    · exact Or.inl on
+  rcases odd_side with hn | hm
+  · rcases covers (2*n) (Nat.totient_two_mul_of_odd hn) with h | h
+    · obtain ⟨i,hi⟩ := hn; omega
+    · exact Or.inl ⟨hn,h.symm⟩
+  · rcases covers (2*m) ((Nat.totient_two_mul_of_odd hm).trans same.symm) with h | h
+    · exact Or.inr ⟨hm,h.symm⟩
+    · obtain ⟨i,hi⟩ := hm; omega
+
+end OMA.S_oeis_a271983
